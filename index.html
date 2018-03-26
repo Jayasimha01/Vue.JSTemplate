@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>GGKtube</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+    <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <div data-app="true" id="inspire" class="application theme--light">
+            <div class="tooltip__content" style="left: 12px; opacity: 0; top: 12px; z-index: 0; display: none;"><span>Source</span></div>
+            <div class="application--wrap">
+                <aside class="navigation-drawer navigation-drawer--clipped navigation-drawer--fixed navigation-drawer--open"
+                    style="height: 100%; margin-top: 64px; max-height: calc(100%); width: 300px;">
+                    <ul data-uid="5" class="list list--dense">
+                        <li>
+                            <a data-ripple="false" class="list__tile list__tile--link">
+                                <div class="list__tile__action"><i aria-hidden="true" class="material-icons icon">dashboard</i></div>
+                                <div class="list__tile__content">
+                                    <div class="list__tile__title">Dashboard</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-ripple="false" class="list__tile list__tile--link">
+                                <div class="list__tile__action"><i aria-hidden="true" class="material-icons icon">settings</i></div>
+                                <div class="list__tile__content">
+                                    <div class="list__tile__title">Settings</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="navigation-drawer__border"></div>
+                </aside>
+                <nav class="toolbar toolbar--clipped toolbar--fixed" style="margin-top: 0px; padding-right: 0px; padding-left: 0px;">
+                    <div class="toolbar__content" style="height: 64px;"><button type="button" data-ripple="true" class="toolbar__side-icon btn btn--icon"><div class="btn__content"><i aria-hidden="true" class="material-icons icon">menu</i></div></button>
+                        <div class="toolbar__title">Application</div>
+                    </div>
+                </nav>
+                <div class="content--wrap">
+                    <main class="content" style="padding: 64px 0px 36px 300px;">
+                        <div class="container fluid fill-height">
+                            <div class="layout justify-center align-center"><span class="tooltip tooltip--right"><span><button type="button" data-ripple="true" class="btn btn--icon btn--large"><div class="btn__content"><i aria-hidden="true" class="material-icons icon icon--large">code</i></div></button></span></span>
+                              <router-view/>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <footer class="footer footer--fixed" style="padding-left: 0px; padding-right: 0px;"><span>© 2017</span></footer>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="/bundle.js"></script></body>
+
+</html>
+<style>
+    .sidenav {
+        background-color: #f1f1f1;
+        height: 100%;
+    }
+
+    .row.content {
+        height: 780px
+    }
+
+    .navbar-default {
+        background-color: #f1f1f1;
+        border-color: #f1f1f1;
+    }
+    .application.theme--light{background:#fafafa;color:rgba(0,0,0,.87)}.application.theme--light a{cursor:pointer}
+    /*div {outline-color:red !important;outline-style: solid;}*/
+</style>
+
+<!--
+<div data-app="true" id="inspire" class="application theme--dark"><div class="tooltip__content" style="left: 12px; opacity: 0; top: 12px; z-index: 0; display: none;"><span>Source</span></div><div class="application--wrap"><aside class="navigation-drawer navigation-drawer--clipped navigation-drawer--fixed navigation-drawer--open" style="height: 100%; margin-top: 64px; max-height: calc(100%); width: 300px;"><ul data-uid="5" class="list list--dense"><li><a data-ripple="false" class="list__tile list__tile--link"><div class="list__tile__action"><i aria-hidden="true" class="material-icons icon">dashboard</i></div> <div class="list__tile__content"><div class="list__tile__title">Dashboard</div></div></a></li> <li><a data-ripple="false" class="list__tile list__tile--link"><div class="list__tile__action"><i aria-hidden="true" class="material-icons icon">settings</i></div> <div class="list__tile__content"><div class="list__tile__title">Settings</div></div></a></li></ul><div class="navigation-drawer__border"></div></aside> <nav class="toolbar toolbar--clipped toolbar--fixed" style="margin-top: 0px; padding-right: 0px; padding-left: 0px;"><div class="toolbar__content" style="height: 64px;"><button type="button" data-ripple="true" class="toolbar__side-icon btn btn--icon"><div class="btn__content"><i aria-hidden="true" class="material-icons icon">menu</i></div></button> <div class="toolbar__title">Application</div></div></nav> <div class="content--wrap"><main class="content" style="padding: 64px 0px 36px 300px;"><div class="container fluid fill-height"><div class="layout justify-center align-center"><span class="tooltip tooltip--right"><span><button type="button" data-ripple="true" class="btn btn--icon btn--large"><div class="btn__content"><i aria-hidden="true" class="material-icons icon icon--large">code</i></div></button></span></span></div></div></main></div> <footer class="footer footer--fixed" style="padding-left: 0px; padding-right: 0px;"><span>© 2017</span></footer></div></div>-->
+
+<!--
+       <nav class="navbar navbar-default" style="height: 64px;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                </div>
+                <ul class="nav nav-pills">
+                    <li><a href="#section1">Programming</a></li>
+                    <li><a href="#section2">QA</a></li>
+                    <li><a href="#section3">BA</a></li>
+                    <li><a href="#section3">HR</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row content">
+            <div class="col-sm-3 sidenav" style="height: 100%; max-height: calc(100% - 100px); width: 300px;">
+                <h4>Menu</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#section1">Programming</a></li>
+                    <li><a href="#section2">QA</a></li>
+                    <li><a href="#section3">BA</a></li>
+                    <li><a href="#section3">HR</a></li>
+                </ul><br>
+
+            </div>
+
+            <div class="col-sm-9" style="height: 100%; max-height: calc(100% - 100px);">
+                <router-view/>
+            </div>
+        </div>-->
